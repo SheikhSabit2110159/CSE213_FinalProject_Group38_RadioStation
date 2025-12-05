@@ -4,26 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Projects</groupId>
-    <artifactId>CSE213_FInalProject_Group38_RadioStation</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>Simulating_operations_of_a_FM_Radio_station</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>CSE213_FInalProject_Group38_RadioStation</name>
+    <name>Simulating_operations_of_a_FM_Radio_station</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.12.1</junit.version>
+        <junit.version>5.10.2</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>21.0.6</version>
+            <version>21</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>21.0.6</version>
+            <version>21</version>
         </dependency>
 
         <dependency>
@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                projects.cse213_finalproject_group38_radiostation/projects.cse213_finalproject_group38_radiostation.HelloApplication
+                                com.example.simulating_operations_of_a_fm_radio_station/com.example.simulating_operations_of_a_fm_radio_station.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

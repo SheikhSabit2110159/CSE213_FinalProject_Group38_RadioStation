@@ -1,8 +1,8 @@
-module projects.cse213_finalproject_group38_radiostation {
+module com.example.simulating_operations_of_a_fm_radio_station {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens projects.cse213_finalproject_group38_radiostation to javafx.fxml;
-    exports projects.cse213_finalproject_group38_radiostation;
+    opens com.example.simulating_operations_of_a_fm_radio_station to javafx.fxml;
+    exports com.example.simulating_operations_of_a_fm_radio_station;
 }
