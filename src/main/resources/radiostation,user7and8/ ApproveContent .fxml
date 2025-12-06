@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radiostation,user7and8.ApproveContentController">
+   <children>
+      <Label layoutX="180.0" layoutY="37.0" text=" Approve Promotional Content">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="82.0" prefHeight="19.0" prefWidth="231.0" text="View Promotional Content Requests">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="requestTV" layoutX="23.0" layoutY="109.0" prefHeight="200.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="idTC" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="titleTC" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="categoryTC" prefWidth="113.0" text="Category" />
+            <TableColumn fx:id="submittedbyTC" prefWidth="105.0" text="SubmittedBy" />
+            <TableColumn fx:id="submitteddateTC" prefWidth="127.0" text="SubmittedDate" />
+        </columns>
+      </TableView>
+      <Button layoutX="30.0" layoutY="325.0" mnemonicParsing="false" onAction="#viewdetailsOA" text="ViewDetails" />
+      <Button layoutX="146.0" layoutY="325.0" mnemonicParsing="false" onAction="#approveOA" text="Approve" />
+      <Button layoutX="237.0" layoutY="325.0" mnemonicParsing="false" onAction="#rejectOA" text="Reject" />
+   </children>
+</AnchorPane>

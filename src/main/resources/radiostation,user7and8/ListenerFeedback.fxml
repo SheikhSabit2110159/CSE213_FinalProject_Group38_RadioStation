@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radiostation,user7and8.ListenerFeedbackController">
+   <children>
+      <Label layoutX="206.0" layoutY="31.0" text="Listener Feedback">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="91.0" text="From Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="126.0" text="To Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromdateTF" layoutX="111.0" layoutY="88.0" />
+      <TextField fx:id="todateTF" layoutX="111.0" layoutY="123.0" />
+      <Button layoutX="285.0" layoutY="123.0" mnemonicParsing="false" onAction="#RequestOA" text="Request Report" />
+      <TableView fx:id="feedbackTV" layoutX="26.0" layoutY="194.0" prefHeight="200.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="feedbackmessageTC" prefWidth="133.0" text="Feedback Message" />
+          <TableColumn fx:id="ratingTC" prefWidth="90.0" text=" Rating" />
+            <TableColumn fx:id="dateTC" prefWidth="74.0" text="Date" />
+            <TableColumn fx:id="summaryTC" prefWidth="95.0" text="Summary" />
+        </columns>
+      </TableView>
+      <Label layoutX="36.0" layoutY="168.0" text="Feedback Table">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="26.0" layoutY="408.0" mnemonicParsing="false" onAction="#fetchfeedbackOA" text="Fetch Feedback" />
+   </children>
+</AnchorPane>
