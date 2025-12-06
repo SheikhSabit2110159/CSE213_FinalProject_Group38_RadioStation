@@ -7,15 +7,16 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class FinalVerificationController {
+    private String showdetails;
 
     @FXML
     private TextField enteridTF;
 
     @FXML
-    private TableColumn<?, ?> showdetailsTC;
+    private TableColumn<showdetails, String> showdetailsTC;
 
     @FXML
-    private TableView<?> showdetailsTV;
+    private TableView<showdetails> showdetailsTV;
 
     @FXML
     void fetchfileOA(ActionEvent event) {

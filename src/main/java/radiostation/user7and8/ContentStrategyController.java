@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 public class ContentStrategyController {
 
+
     @FXML
     private TextField campaigntype;
 
@@ -15,7 +16,7 @@ public class ContentStrategyController {
     private TextArea strategysummaryTA;
 
     @FXML
-    private ComboBox<?> targetedaudienceCB;
+    private ComboBox<String> targetedaudienceCB;
 
     @FXML
     void validatestrategyOA(ActionEvent event) {

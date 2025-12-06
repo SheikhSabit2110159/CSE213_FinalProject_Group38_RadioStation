@@ -7,7 +7,7 @@ import javafx.scene.control.ComboBox;
 public class FinalShowContent8Controller {
 
     @FXML
-    private ComboBox<?> shoeselectorCB;
+    private ComboBox<String> shoeselectorCB;
 
     @FXML
     void approveOA(ActionEvent event) {

@@ -6,21 +6,23 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class ListenerInteractions8Controller {
+    private String caller, message,panel;
+    private int mail,time;
 
     @FXML
-    private TableColumn<?, ?> callerTC;
+    private TableColumn<caller, String> callerTC;
 
     @FXML
-    private TableColumn<?, ?> mailTC;
+    private TableColumn<mail, Integer> mailTC;
 
     @FXML
-    private TableColumn<?, ?> messageTC;
+    private TableColumn<message, String> messageTC;
 
     @FXML
-    private TableView<?> panelTV;
+    private TableView<panel> panelTV;
 
     @FXML
-    private TableColumn<?, ?> timeTC;
+    private TableColumn<time, Integer> timeTC;
 
     @FXML
     void approveOA(ActionEvent event) {

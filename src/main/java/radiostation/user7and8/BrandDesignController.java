@@ -7,30 +7,31 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class BrandDesignController {
+    private String logofile, logoshape, themecolor,tagline,design;
 
     @FXML
-    private TableView<?> designTV;
+    private TableView<design> designTV;
 
     @FXML
-    private TableColumn<?, ?> logofileTC;
+    private TableColumn<logofile, String> logofileTC;
 
     @FXML
     private TextField logofileTF;
 
     @FXML
-    private TableColumn<?, ?> logoshapeTC;
+    private TableColumn<logoshape, String> logoshapeTC;
 
     @FXML
     private TextField logoshapeTF;
 
     @FXML
-    private TableColumn<?, ?> taglineTC;
+    private TableColumn<tagline, String> taglineTC;
 
     @FXML
     private TextField taglineTF;
 
     @FXML
-    private TableColumn<?, ?> themecolorTC;
+    private TableColumn<themecolor, String> themecolorTC;
 
     @FXML
     private TextField themecolorTF;

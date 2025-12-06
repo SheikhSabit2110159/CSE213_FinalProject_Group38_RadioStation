@@ -7,7 +7,7 @@ import javafx.scene.control.ComboBox;
 public class WeeklyContent8controller {
 
     @FXML
-    private ComboBox<?> selectweekCB;
+    private ComboBox<String> selectweekCB;
 
     @FXML
     void loadOA(ActionEvent event) {

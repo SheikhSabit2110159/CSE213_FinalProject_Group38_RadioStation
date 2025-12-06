@@ -7,24 +7,26 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class ListenerFeedbackController {
+    private String feedback, feedbackmessage,scriptname,summary;
+    private int date,fromdate,rating;
 
     @FXML
-    private TableColumn<?, ?> dateTC;
+    private TableColumn<date, Integer> dateTC;
 
     @FXML
-    private TableView<?> feedbackTV;
+    private TableView<feedback> feedbackTV;
 
     @FXML
-    private TableColumn<?, ?> feedbackmessageTC;
+    private TableColumn<feedbackmessage, String> feedbackmessageTC;
 
     @FXML
     private TextField fromdateTF;
 
     @FXML
-    private TableColumn<?, ?> ratingTC;
+    private TableColumn<rating, Integer> ratingTC;
 
     @FXML
-    private TableColumn<?, ?> summaryTC;
+    private TableColumn<summary, String> summaryTC;
 
     @FXML
     private TextField todateTF;

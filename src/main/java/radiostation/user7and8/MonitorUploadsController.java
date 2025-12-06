@@ -6,21 +6,23 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class MonitorUploadsController {
+    private String display, filename,uploader;
+    private int date,time;
 
     @FXML
-    private TableColumn<?, ?> dateTC;
+    private TableColumn<date, Integer> dateTC;
 
     @FXML
-    private TableView<?> displayTV;
+    private TableView<display> displayTV;
 
     @FXML
-    private TableColumn<?, ?> filenameTC;
+    private TableColumn<filename, String> filenameTC;
 
     @FXML
-    private TableColumn<?, ?> timeTC;
+    private TableColumn<time, Integer> timeTC;
 
     @FXML
-    private TableColumn<?, ?> uploaderTC;
+    private TableColumn<uploader, String> uploaderTC;
 
     @FXML
     void dashboardOA(ActionEvent event) {

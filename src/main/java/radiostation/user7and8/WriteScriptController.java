@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 public class WriteScriptController {
 
+
     @FXML
     private Label script;
 

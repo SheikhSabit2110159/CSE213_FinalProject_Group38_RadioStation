@@ -7,24 +7,26 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class ComplianceCheck8Controller {
+    private String showduration, showfiles,showname;
+    private int date,showserial;
 
     @FXML
-    private TableColumn<?, ?> dateTC;
+    private TableColumn<date, Integer> dateTC;
 
     @FXML
     private TextField enterprogramfileTF;
 
     @FXML
-    private TableColumn<?, ?> showdurationTC;
+    private TableColumn<showduration, String> showdurationTC;
 
     @FXML
     private TableView<?> showfilesTV;
 
     @FXML
-    private TableColumn<?, ?> shownameTC;
+    private TableColumn<showname, String> shownameTC;
 
     @FXML
-    private TableColumn<?, ?> showserialTC;
+    private TableColumn<showserial, Integer> showserialTC;
 
     @FXML
     void savereportOA(ActionEvent event) {

@@ -5,18 +5,20 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 
 public class Advertisements8Controller {
+    private String adname, sponsor;
+    private int date,length;
 
     @FXML
-    private TableColumn<?, ?> adnameTC;
+    private TableColumn<adname, String> adnameTC;
 
     @FXML
-    private TableColumn<?, ?> dateTC;
+    private TableColumn<date, Integer> dateTC;
 
     @FXML
-    private TableColumn<?, ?> lengthTC;
+    private TableColumn<length, Integer> lengthTC;
 
     @FXML
-    private TableColumn<?, ?> sponsorTC;
+    private TableColumn<sponsor, String> sponsorTC;
 
     @FXML
     void ApproveOA(ActionEvent event) {
