@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="radiostation,user7and8.ListenerInteractions8"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radiostation,user7and8.ListenerInteractions8Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="34.0" text="Listener Interaction Review Panel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="panelTV" layoutX="14.0" layoutY="78.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="callerTC" prefWidth="75.0" text="Caller Name" />
+          <TableColumn fx:id="messageTC" prefWidth="75.0" text="Message" />
+            <TableColumn fx:id="timeTC" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="mailTC" prefWidth="75.0" text="Mail" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="296.0" mnemonicParsing="false" onAction="#approveOA" text="Approve" />
+      <Button layoutX="105.0" layoutY="296.0" mnemonicParsing="false" onAction="#rejectOA" text="Reject" />
+   </children>
 </AnchorPane>
