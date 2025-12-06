@@ -6,18 +6,21 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class ApproveScripts8Controller {
+    private String Script, author,scriptname;
+    private int date,length;
+
 
     @FXML
-    private TableView<?> ScriptTV;
+    private TableView<Script> ScriptTV;
 
     @FXML
-    private TableColumn<?, ?> authorTC;
+    private TableColumn<author, String> authorTC;
 
     @FXML
-    private TableColumn<?, ?> dateTC;
+    private TableColumn<date, Integer> dateTC;
 
     @FXML
-    private TableColumn<?, ?> scriptnameTC;
+    private TableColumn<scriptname, String> scriptnameTC;
 
     @FXML
     void loadOA(ActionEvent event) {

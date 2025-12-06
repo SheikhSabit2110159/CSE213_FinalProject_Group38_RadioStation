@@ -6,12 +6,13 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 
 public class CollaborateController {
+    private String suggestions;
 
     @FXML
     private TextArea requestmessageTA;
 
     @FXML
-    private TableView<?> suggestionsTV;
+    private TableView<suggestions> suggestionsTV;
 
     @FXML
     void fetchsuggestionsOA(ActionEvent event) {

@@ -6,24 +6,26 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class ApproveContentController {
+    private String Category, submittedby, title,request;
+    private int ID,submitteddate;
 
     @FXML
-    private TableColumn<?, ?> categoryTC;
+    private TableColumn<Category, String> categoryTC;
 
     @FXML
-    private TableColumn<?, ?> idTC;
+    private TableColumn<ID, String> idTC;
 
     @FXML
-    private TableView<?> requestTV;
+    private TableView<request> requestTV;
 
     @FXML
-    private TableColumn<?, ?> submittedbyTC;
+    private TableColumn<submittedby, String> submittedbyTC;
 
     @FXML
-    private TableColumn<?, ?> submitteddateTC;
+    private TableColumn<submitteddate, Integer> submitteddateTC;
 
     @FXML
-    private TableColumn<?, ?> titleTC;
+    private TableColumn<title, String> titleTC;
 
     @FXML
     void approveOA(ActionEvent event) {
