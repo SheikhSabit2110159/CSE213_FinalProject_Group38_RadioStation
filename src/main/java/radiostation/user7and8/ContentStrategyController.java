@@ -18,6 +18,12 @@ public class ContentStrategyController {
     @FXML
     private ComboBox<String> targetedaudienceCB;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+        targetedaudienceCB.getItems().addAll("Male", "Female", "Teen");
+
+
+
     @FXML
     void validatestrategyOA(ActionEvent event) {
 

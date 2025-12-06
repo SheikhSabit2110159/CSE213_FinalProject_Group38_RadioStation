@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class FinalVerificationController {
     private String showdetails;
@@ -17,6 +18,10 @@ public class FinalVerificationController {
 
     @FXML
     private TableView<showdetails> showdetailsTV;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+        showdetailsTC.setCellValueFactory(new PropertyValueFactory<showdetails, String>("showdetailsTC"));
 
     @FXML
     void fetchfileOA(ActionEvent event) {

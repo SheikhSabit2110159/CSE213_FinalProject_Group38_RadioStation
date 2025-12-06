@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ComplianceCheck8Controller {
     private String showduration, showfiles,showname;
@@ -28,7 +29,16 @@ public class ComplianceCheck8Controller {
     @FXML
     private TableColumn<showserial, Integer> showserialTC;
 
-    @FXML
+    @javafx.fxml.FXML
+    public void initialize() {
+        dateTC.setCellValueFactory(new PropertyValueFactory<date, String>("dateTC"));
+        showdurationTC.setCellValueFactory(new PropertyValueFactory<showduration, String>("showdurationTC"));
+        shownameTC.setCellValueFactory(new PropertyValueFactory<showname, String>("shownameTC"));
+        showserialTC.setCellValueFactory(new PropertyValueFactory<showserial, String>("showserialTC"));
+
+
+
+        @FXML
     void savereportOA(ActionEvent event) {
 
     }

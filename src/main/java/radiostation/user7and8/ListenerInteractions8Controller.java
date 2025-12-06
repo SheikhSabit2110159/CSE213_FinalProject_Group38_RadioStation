@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ListenerInteractions8Controller {
     private String caller, message,panel;
@@ -23,6 +24,13 @@ public class ListenerInteractions8Controller {
 
     @FXML
     private TableColumn<time, Integer> timeTC;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+        callerTC.setCellValueFactory(new PropertyValueFactory<caller, String>("callerTC"));
+        mailTC.setCellValueFactory(new PropertyValueFactory<mail, String>("mailTC"));
+        messageTC.setCellValueFactory(new PropertyValueFactory<message, String>("messageTC"));
+        timeTC.setCellValueFactory(new PropertyValueFactory<time, String>("timeTC"));
 
     @FXML
     void approveOA(ActionEvent event) {

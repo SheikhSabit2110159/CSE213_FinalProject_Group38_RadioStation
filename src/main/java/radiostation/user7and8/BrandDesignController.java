@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class BrandDesignController {
     private String logofile, logoshape, themecolor,tagline,design;
@@ -35,6 +36,12 @@ public class BrandDesignController {
 
     @FXML
     private TextField themecolorTF;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+        logofileTC.setCellValueFactory(new PropertyValueFactory<logoshape, String>("logofileTC"));
+        themecolorTC.setCellValueFactory(new PropertyValueFactory<themecolor, String>("themecolorTC"));
+        taglineTC.setCellValueFactory(new PropertyValueFactory<tagline, String>("taglineTC"));
 
     @FXML
     void showpreviewOA(ActionEvent event) {

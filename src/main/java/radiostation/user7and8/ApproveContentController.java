@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ApproveContentController {
     private String Category, submittedby, title,request;
@@ -26,6 +27,14 @@ public class ApproveContentController {
 
     @FXML
     private TableColumn<title, String> titleTC;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+        categoryTC.setCellValueFactory(new PropertyValueFactory<Category, String>("categoryTC"));
+        idTC.setCellValueFactory(new PropertyValueFactory<ID, String>("idTC"));
+        submittedbyTC.setCellValueFactory(new PropertyValueFactory<submittedby, String>("submittedbyTC"));
+        submitteddateTC.setCellValueFactory(new PropertyValueFactory<submitteddate, String>("submitteddateTC"));
+        titleTC.setCellValueFactory(new PropertyValueFactory<title, String>("titleTC"));
 
     @FXML
     void approveOA(ActionEvent event) {

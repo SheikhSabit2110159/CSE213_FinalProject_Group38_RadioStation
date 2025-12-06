@@ -9,6 +9,10 @@ public class FinalShowContent8Controller {
     @FXML
     private ComboBox<String> shoeselectorCB;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+        shoeselectorCB.getItems().addAll("Week 1-7", "Week 8-14", "Week 15-last");
+
     @FXML
     void approveOA(ActionEvent event) {
 

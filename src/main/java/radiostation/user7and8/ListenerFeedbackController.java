@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ListenerFeedbackController {
     private String feedback, feedbackmessage,scriptname,summary;
@@ -30,6 +31,13 @@ public class ListenerFeedbackController {
 
     @FXML
     private TextField todateTF;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+        dateTC.setCellValueFactory(new PropertyValueFactory<date, String>("dateTC"));
+        feedbackmessageTC.setCellValueFactory(new PropertyValueFactory<feedbackmessage, String>("feedbackmessageTC"));
+        ratingTC.setCellValueFactory(new PropertyValueFactory<rating, String>("ratingTC"));
+        summaryTC.setCellValueFactory(new PropertyValueFactory<summary, String>("summaryTC"));
 
     @FXML
     void RequestOA(ActionEvent event) {
